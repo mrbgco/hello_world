@@ -9,6 +9,13 @@ public class HelloWorld {
     }
 
     public static void introduceIssue() {
+
+        int[] a = new int[5];
+        int sum = 0;
+        for (int i = 0; i <= a.length; i++) { // BAD
+            sum += a[i];
+        }
+
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream(new File("may_not_exist.txt"));
