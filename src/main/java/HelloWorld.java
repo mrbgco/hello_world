@@ -6,15 +6,14 @@ import java.io.IOException;
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-    }
-
-    public static void introduceIssue() {
-
         int[] a = new int[5];
         int sum = 0;
         for (int i = 0; i <= a.length; i++) { // BAD
             sum += a[i];
         }
+    }
+
+    public static void introduceIssue() {
 
         FileOutputStream fos = null;
         try {
