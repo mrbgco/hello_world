@@ -2,13 +2,16 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello world!");
         int[] a = new int[5];
         int sum = 0;
-        for (int i = 0; i <= a.length; i++) { // BAD
+	Scanner input = new Scanner(System.in);	
+	int number = input.nextInt();
+        for (int i = 0; i <= number; i++) { // BAD
             sum += a[i];
         }
     }
